@@ -1,0 +1,19 @@
+name: numbers
+image: okteto/python:3
+workdir: /okteto
+command: ["bash"]
+volumes:
+  - /app/
+  - /root/.vscode-server/extensions/
+  - /usr/local/lib/python3.8/site-packages/
+forward:
+  - 5000:8080
+remote: 22000
+persistentVolume:
+  enabled: true
+  storageClass: standard
+  size: 2Gi
+resources:
+  limits:
+    memory: "1Gi"
+    cpu: "500m"

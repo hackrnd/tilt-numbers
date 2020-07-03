@@ -1,0 +1,5 @@
+/deployments
+/.git
+/__debug_bin
+/__pycache__
+/.vscode

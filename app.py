@@ -8,8 +8,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def rand_number():
-    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    return str(choice(nums))+'\n'
+    nums = [0,  2,  4,  6,  8]
+    rand = choice(nums)
+    return str(rand)+'\n'
 
 
 if __name__ == '__main__':

@@ -1,0 +1,8 @@
+/deployments
+/.git
+/__debug_bin
+/__pycache__
+Dockerfile
+okteto.yml
+.dockerignore
+.gitignore
